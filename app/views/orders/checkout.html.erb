@@ -1,0 +1,11 @@
+checkout
+
+<%= form_for @order , url: {action: "update"} do |f| %>
+    <p>first name: <%= f.text_field :first_name, class: "form-control" %></p>
+    <p>last name: <%= f.text_field :last_name, class: "form-control" %></p>
+    <p>address: <%= f.text_field :address, class: "form-control" %></p>
+    <p>email: <%= f.text_field :email, class: "form-control" %></p>
+    <p>subtotal: <%= f.text_field :subtotal, class: "form-control" %></p>
+    <%= f.submit "Order", class: "btn btn-primary" %>
+
+<% end %>
